@@ -1,0 +1,10 @@
+<div class="favorites-panel">
+    <h2>My Favorites</h2>
+    <div>
+      <input [(ngModel)]="newFavorite" placeholder="Enter a favorite">
+      <button (click)="addFavorite()">Add to my favorites</button>
+    </div>
+    <ul>
+      <li *ngFor="let favorite of favorites">{{ favorite }}</li>
+    </ul>
+  </div>
